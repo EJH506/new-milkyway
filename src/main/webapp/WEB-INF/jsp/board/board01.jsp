@@ -245,13 +245,44 @@
         <div id="postSearch">
           <form action="board01" method="get" name="frmPostSearch" autocomplete="off">
             <select name="keyField" id="keyField">
-              <option value="multiple">제목+내용</option>
-              <option value="title">제목</option>
-              <option value="content">내용</option>
-              <option value="nickname">작성자</option>
+              <c:choose>
+                <c:when test="${not empty filter.keyWord && filter.keyField == 'multiple'}">
+                   <option value="multiple" selected>제목+내용</option>
+                </c:when>
+                <c:otherwise>
+                  <option value="multiple">제목+내용</option>
+                </c:otherwise>
+              </c:choose>
+
+              <c:choose>
+                <c:when test="${not empty filter.keyWord && filter.keyField == 'title'}">
+                   <option value="title" selected>제목</option>
+                </c:when>
+                <c:otherwise>
+                  <option value="title">제목</option>
+                </c:otherwise>
+              </c:choose>
+
+              <c:choose>
+                <c:when test="${not empty filter.keyWord && filter.keyField == 'content'}">
+                   <option value="content" selected>내용</option>
+                </c:when>
+                <c:otherwise>
+                  <option value="content">내용</option>
+                </c:otherwise>
+              </c:choose>
+
+              <c:choose>
+                <c:when test="${not empty filter.keyWord && filter.keyField == 'nickname'}">
+                   <option value="nickname" selected>작성자</option>
+                </c:when>
+                <c:otherwise>
+                  <option value="nickname">작성자</option>
+                </c:otherwise>
+              </c:choose>
             </select>
   
-            <input type="text" name="keyWord" id="keyWord" required />
+            <input type="text" name="keyWord" id="keyWord" value="${filter.keyWord}" required />
             
             <c:if test="${not empty filter.category}">
             	<input type="hidden" name="category" value="${filter.category}" />

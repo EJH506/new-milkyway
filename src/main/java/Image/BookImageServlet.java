@@ -26,9 +26,9 @@ public class BookImageServlet extends HttpServlet {
     }
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String url = "jdbc:mysql://localhost:3306/MillkyWayDB?useSSL=false";
+        String url = "jdbc:mysql://localhost:3306/MillkyWayDB?useSSL=false&allowPublicKeyRetrieval=true";
         String user = "root";
-        String password = "1234";
+        String password = "xhxhaldzl1";
 
         try (Connection conn = DriverManager.getConnection(url, user, password);
              PreparedStatement pstmt = conn.prepareStatement("SELECT photo FROM Booktbl WHERE bookid = ?")) {
