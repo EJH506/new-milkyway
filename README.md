@@ -70,4 +70,32 @@ $ git clone https://github.com/UJH506/newMilkyWay.git
     ```
 // DB 생성
 - 프로젝트/src/main/webapp/sql 경로의 sql구문들을 참조하여 "MillkyWayDB" DB 생성
-- 프로젝트/Java Resources/src/main/java/DBConnection 경로의 DBConnectionMgr.java파일에서의 DB설정 정보 수정 
+- 프로젝트/Java Resources/src/main/java/DBConnection 경로의 DBConnectionMgr.java파일에서의 DB설정 정보 수정
+<br /><br />
+
+### 👬 팀원소개
+- 김정훈
+  - 프론트엔드/백엔드<br />
+    메인 페이지, 마이 페이지<br />
+  - 백엔드<br />
+    로그인 페이지<br />
+  - 배포<br />
+    서버 배포<br />
+    
+- 한수진
+  - 프론트엔드/백엔드<br />
+    상품관련 페이지, 추천도서 페이지, 회원가입 페이지
+  - 프론트엔드<br />
+    로그인 페이지, 관리자 페이지<br />
+  - 배포<br />
+    서버 배포<br />
+    
+- 엄지혜
+  - 프론트엔드/백엔드<br />
+    커뮤니티 페이지
+  - 프론트엔드<br />
+    로그인 페이지
+  - 백엔드<br />
+    관리자 페이지
+  - 배포<br />
+    서버 배포
