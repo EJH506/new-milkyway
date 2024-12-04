@@ -46,4 +46,7 @@
 ```
 // 프로젝트 복제
 $ git clone https://github.com/UJH506/newMilkyWay.git
+
+// IDE에 Import 후 환경설정
+
 ```
