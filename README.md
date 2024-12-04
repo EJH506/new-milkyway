@@ -48,27 +48,32 @@
 // 프로젝트 복제
 $ git clone https://github.com/UJH506/newMilkyWay.git
 ```
+<br />
+
 2. IDE에 Import 후 환경설정<br />
 <img src="https://github.com/user-attachments/assets/814039bf-6e27-4d08-bf17-565e68902100" width="500px" alt="은하수_환경설정">
+<br /><br />
 
 3. Servers 디렉토리 하위의 설정파일 수정
-- context.xml
-  - <Context> 태그에 속성추가
-  - <Context> 태그 내부에 Resources 설정 추가
-  ```xml
-  <Context allowCasualMultipartParsing="true" path="/"> // 속성추가
-    <Resources cachingAllowed="true" cacheMaxSize="100000" /> // 태그 추가
-
-    ... (생략)
-  </Context>
-  ```
-
-- server.xml
-  - Context Path 수정
-    - /MillkyWay -> /
+  - context.xml
+    - <Context> 태그에 속성추가
+    - <Context> 태그 내부에 Resources 설정 추가
     ```xml
-    <Context docBase="MillkyWay" path="/" ...(생략) />
+    <Context allowCasualMultipartParsing="true" path="/"> // 속성추가
+      <Resources cachingAllowed="true" cacheMaxSize="100000" /> // 태그 추가
+  
+      ... (생략)
+    </Context>
     ```
+
+  - server.xml
+    - Context Path 수정
+      - /MillkyWay -> /
+      ```xml
+      <Context docBase="MillkyWay" path="/" ...(생략) />
+      ```
+<br />
+    
 4. DB 생성
 - 프로젝트/src/main/webapp/sql 경로의 sql구문들을 참조하여 "MillkyWayDB" DB 생성
 - 프로젝트/Java Resources/src/main/java/DBConnection 경로의 DBConnectionMgr.java파일에서의 DB설정 정보 수정
