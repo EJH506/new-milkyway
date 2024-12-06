@@ -1,5 +1,7 @@
 ## 은하수책방
-(접속 링크)
+🕹 서비스 체험하기
+
+[▶ 여기를 눌러 시작해보세요 ! ◀](http://3.37.117.137:8080)
 <br /><br />
 
 ### 📖 프로젝트 소개
@@ -10,11 +12,17 @@
 ### ⚙ 개발 환경
 - JDK : 11
 - Web Server : Apatch Tomcat 9
-- Database : MySQL 5
+- Database : MySQL 8
 - 프로그래밍 언어 : Java (JSP, Servlet)
 - IDE : Eclipse 2024-06
 - 버전 관리 : Git
 - 배포환경 :
+  - 클라우드 서비스 : AWS EC2
+  - 운영체제 : Ubuntu 22.04 LTS
+  - 백엔드 : Java (Servlet)
+  - 데이터베이스 : MySQL
+  - 배포 방식 : SSH와 도커 이미지를 사용하여 EC2 인스턴스에 배포
+  - URL : http://3.37.117.137:8080
 <br /><br />
 
 ### 📌 주요 기능
