@@ -62,10 +62,8 @@
 				<button type="button" onclick="delChk()" >삭제</button>
 			</div>
 		</section>
-		
-		<footer>
-			푸터영역
-		</footer>
+				
+		<jsp:include page="../components/footer.jsp" />
 	</div>
 	
 	<script>

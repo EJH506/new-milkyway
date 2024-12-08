@@ -354,10 +354,8 @@
 	  </div>
 	  
     </section>
-
-    <footer>
-      푸터영역
-    </footer>
+    
+	<jsp:include page="../components/footer.jsp" />
     
     <form action="board01" method="get" name="pageFrm">
 	    <c:if test="${not empty filter.keyWord}">

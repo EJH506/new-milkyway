@@ -45,16 +45,16 @@ public class DBConnectionMgr {
 //    	    _password = "ezen3688**";
 
     // ec2 배포 DB설정
-  private String _driver = "com.mysql.cj.jdbc.Driver",
-  _url = "jdbc:mysql://3.37.117.137:3306/MillkyWayDB?&useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8",
-  _user = "root",
-  _password = "xhxhaldzl1";
+//  private String _driver = "com.mysql.cj.jdbc.Driver",
+//  _url = "jdbc:mysql://3.37.117.137:3306/MillkyWayDB?&useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8",
+//  _user = "root",
+//  _password = "xhxhaldzl1";
 
       // 로컬 DB설정
-//    private String _driver = "com.mysql.cj.jdbc.Driver",
-//    _url = "jdbc:mysql://127.0.0.1:3306/MillkyWayDB?&useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8",
-//    _user = "root",
-//    _password = "xhxhaldzl1";
+    private String _driver = "com.mysql.cj.jdbc.Driver",
+    _url = "jdbc:mysql://127.0.0.1:3306/MillkyWayDB?&useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8",
+    _user = "root",
+    _password = "xhxhaldzl1";
     
     private boolean _traceOn = false;
     private boolean initialized = false;

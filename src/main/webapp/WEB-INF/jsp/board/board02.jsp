@@ -319,10 +319,8 @@
     		<input type="hidden" name="paging.nowPage" />
     	</form>
 	  </section>
-	  
-	  <footer>
-	    푸터영역
-	  </footer>
+
+	  <jsp:include page="../components/footer.jsp" />
   </div>
 </body>
 </html>

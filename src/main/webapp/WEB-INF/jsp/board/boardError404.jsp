@@ -26,9 +26,8 @@
 			</div>
 		</section>
 		
-		<footer>
-			푸터영역
-		</footer>
+		
+		<jsp:include page="../components/footer.jsp" />
 	</div>
 </body>
 <script>
