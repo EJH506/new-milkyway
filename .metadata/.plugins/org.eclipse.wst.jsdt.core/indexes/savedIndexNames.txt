@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\지혜\Desktop\fullstack_2024_04_lee\works\포트폴리오\40-milkyway\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2764935504.index
+2646549766.index
+1304141945.index
+2137432143.index
+3210008283.index
+2778630671.index
