@@ -28,6 +28,8 @@ public class SignupServlet extends HttpServlet {
         String jspPath = "/WEB-INF/jsp/signup" + relativePath.substring("/signup".length()) + ".jsp";
 
         try {
+        	// 경로 반환
+        	requestURIReturn.returnURL(request);
             // JSP로 포워딩
             RequestDispatcher dispatcher = request.getRequestDispatcher(jspPath);
             dispatcher.forward(request, response);

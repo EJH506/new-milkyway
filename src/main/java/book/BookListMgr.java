@@ -30,7 +30,7 @@ public class BookListMgr {
 		String sql = null;
 		Vector<BookBean> blist = new Vector<BookBean>();
 		
-		System.out.println("3. end" + end);
+		// System.out.println("3. end" + end);
 		
 		try {
 			con = pool.getConnection();

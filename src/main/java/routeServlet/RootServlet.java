@@ -38,6 +38,8 @@ public class RootServlet extends HttpServlet {
         }
 
         try {
+        	// 경로 반환
+        	requestURIReturn.returnURL(request);
             RequestDispatcher dispatcher = request.getRequestDispatcher(jspPath);
             dispatcher.forward(request, response);
         } catch (ServletException e) {

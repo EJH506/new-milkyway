@@ -140,18 +140,19 @@ public class BookOrderMgr {
 		boolean flag = false;
 		try {
 			con = pool.getConnection();
-			sql = "update carttbl set (quantity = quantity + 1) where userid = ? and bookid = ?";
+			sql = "update carttbl set quantity = quantity + 1 where userid = ? and bookid = ?";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, userid);
 			pstmt.setInt(2, bookid);
-			flag = pstmt.executeQuery().next();
+			if(pstmt.executeUpdate() > 0) {
+				flag = true;
+			}
 			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}finally {
 			pool.freeConnection(con, pstmt);
 		}
-		
 		return flag;
 	}
 	

@@ -776,6 +776,8 @@ public class BoardServlet extends HttpServlet {
         String errorPath = "/WEB-INF/jsp/board/boardError404.jsp";
 
         try {
+        	// 경로 반환
+        	requestURIReturn.returnURL(request);
             // JSP로 포워딩
             RequestDispatcher dispatcher = request.getRequestDispatcher(jspPath);
             dispatcher.forward(request, response);

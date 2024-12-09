@@ -3,6 +3,34 @@
 <jsp:useBean id="cMgr" class="components.ComponentsMthod" />
 <%
 	String userId = (String) session.getAttribute("idKeyS");
+
+	String currentURI = (String)request.getAttribute("currentURI");
+	String category = request.getParameter("category");
+	
+	System.out.println("currentURI = "+currentURI);
+	
+	String homeSelected = "";
+	String domesticSelected = "";
+	String overseasSelected = "";
+	String ebookSelected = "";
+	String choiceSelected = "";
+	String boardSelected = "";
+	
+	if(currentURI.equals("/")) {
+		homeSelected = " class='on'";
+	} else if (currentURI.startsWith("/shop/") && category != null) {
+        if (category.equals("국내도서")) {
+        	domesticSelected = " class='on'"; // 국내도서 카테고리
+        } else if (category.equals("해외도서")) {
+        	overseasSelected = " class='on'"; // 외국도서 카테고리
+        } else if (category.equals("eBook")) {
+        	ebookSelected = " class='on'"; // ebook 카테고리
+        }
+    } else if (currentURI.startsWith("/choice/")) {
+    	choiceSelected = " class='on'"; // choice 페이지
+    } else if (currentURI.startsWith("/board/")) {
+    	boardSelected = " class='on'"; // board 페이지
+    }
 %>
 <!DOCTYPE html>
 <html>
@@ -17,24 +45,24 @@
       <div class="headTop">
         <div class="frame">
           <ul class="topGnb">
-            <li class="on"><a href="/">HOME</a></li>
-            <li>
+            <li<%= homeSelected %>><a href="/">HOME</a></li>
+            <li<%= domesticSelected %>>
               <a href="/shop/shop01?category=국내도서">국내도서</a>
               <div class="underNav">국내도서underNav</div>
             </li>
-            <li>
+            <li<%= overseasSelected %>>
               <a href="/shop/shop01?category=해외도서">해외도서</a>
               <div class="underNav">해외도서underNav</div>
             </li>
-            <li>
+            <li<%= ebookSelected %>>
               <a href="/shop/shop01?category=eBook">eBook</a>
               <div class="underNav">eBookunderNav</div>
             </li>
-            <li>
+            <li<%= choiceSelected %>>
               <a href="/choice/choice01">추천도서</a>
               <div class="underNav">중고매장underNav</div>
             </li>
-            <li>
+            <li<%= boardSelected %>>
               <a href="/board/board01">커뮤니티</a>
               <div class="underNav">커뮤니티underNav</div>
             </li>
