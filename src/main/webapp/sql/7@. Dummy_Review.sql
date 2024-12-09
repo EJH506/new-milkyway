@@ -1,6 +1,7 @@
-SELECT * FROM REVIEWTBL;
+#SELECT * FROM REVIEWTBL;
+#DROP TABLE REVIEWTBL ;
 -- ctrl + a (전체선택) 후 ctrl + shift + enter  => 쿼리문 전체 실행
-DROP TABLE REVIEWTBL ;
+
 
 INSERT INTO Reviewtbl (userid, bookid, score, nickname, content) VALUES
 (1, 1, 5, '수진이', '이 책은 한국 현대문학의 정수입니다. 정말 감동적인 이야기였습니다. 강력히 추천합니다!'),

@@ -1,5 +1,5 @@
 -- ctrl + a (전체선택) 후 ctrl + shift + enter  => 쿼리문 전체 실행
-SELECT * FROM REVIEWTBL R;
+#SELECT * FROM REVIEWTBL R ;
 -- 데이터베이스 테이블 생성 전 초기화
 -- 각 테이블간 참조관계를 고려하여 참조된 필드가 있는 테이블 먼저 삭제
 -- 모든 테이블이 삭제된 후 데이터베이스를 삭제하여
@@ -9,13 +9,16 @@ DROP TABLE IF EXISTS canceltbl;
 DROP TABLE IF EXISTS carttbl;
 DROP TABLE IF EXISTS wishtbl;
 DROP TABLE IF EXISTS purchasetbl;
-DROP TABLE IF EXISTS purchase_bundletbl;
+DROP TABLE IF EXISTS purchase_bundle;
 DROP TABLE IF EXISTS commenttbl;
 DROP TABLE IF EXISTS Reviewtbl;
 DROP TABLE IF EXISTS boardtbl;
 DROP TABLE IF EXISTS Booktbl;
 DROP TABLE IF EXISTS pointManagementtbl;
 DROP TABLE IF EXISTS membertbl;
+DROP TABLE IF EXISTS likedtbl;
+DROP TABLE IF EXISTS categoryForAdmintbl;
+DROP TABLE IF EXISTS tabForAdmintbl;
 
 
 DROP DATABASE IF EXISTS MillkyWayDB;
