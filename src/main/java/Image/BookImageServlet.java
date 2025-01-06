@@ -27,8 +27,8 @@ public class BookImageServlet extends HttpServlet {
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //    	ec2 배포 설정
-//      String url = "jdbc:mysql://3.37.117.137:3306/MillkyWayDB?useSSL=false&allowPublicKeyRetrieval=true";
-        String url = "jdbc:mysql://localhost:3306/MillkyWayDB?useSSL=false&allowPublicKeyRetrieval=true";
+      String url = "jdbc:mysql://3.35.94.210:3306/MillkyWayDB?useSSL=false&allowPublicKeyRetrieval=true";
+//        String url = "jdbc:mysql://localhost:3306/MillkyWayDB?useSSL=false&allowPublicKeyRetrieval=true";
         String user = "root";
         String password = "xhxhaldzl1";
 

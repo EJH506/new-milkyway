@@ -293,8 +293,8 @@
 	                    console.log("res 성공~");
 	                    // 백엔드로 주문 생성 요청
 	                    // ec2 배포
-	                    // axios.post("http://3.37.117.137:8080/orders/kakaoPay?impUid="+res.imp_uid).then((response) => {
-	                    axios.post("http://localhost:8080/orders/kakaoPay?impUid="+res.imp_uid).then((response) => {
+	                    axios.post("http://3.35.94.210:8080/orders/kakaoPay?impUid="+res.imp_uid).then((response) => {
+	                    //axios.post("http://localhost:8080/orders/kakaoPay?impUid="+res.imp_uid).then((response) => {
 	                        console.log('response.data = ' + response.data);
 	                        frm.action = '/procs/buyProc?totalPrice=' +  $totPrice.textContent + '&point=' + $point.textContent;
 	                        frm.submit();
@@ -334,9 +334,9 @@
           "totalPayAmount": $totPrice.textContent,
           "taxScopeAmount": $totPrice.textContent,
           "taxExScopeAmount": "0",
-          "returnUrl": 'http://localhost:8080/procs/buyProc?totalPrice=' +  $totPrice.textContent + '&point=' + $point.textContent
+          //"returnUrl": 'http://localhost:8080/procs/buyProc?totalPrice=' +  $totPrice.textContent + '&point=' + $point.textContent
           // ec2 배포
-          // "returnUrl": 'http://3.37.117.137:8080/procs/buyProc?totalPrice=' +  $totPrice.textContent + '&point=' + $point.textContent
+          "returnUrl": 'http://3.35.94.210:8080/procs/buyProc?totalPrice=' +  $totPrice.textContent + '&point=' + $point.textContent
         });
 	 };
 

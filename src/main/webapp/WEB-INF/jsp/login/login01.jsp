@@ -83,8 +83,8 @@ if (session.getAttribute("idKeyS") != null) {
      	<%
 		String clientId = "cR6ZYmE3B8jjB8ERbb3U";//애플리케이션 클라이언트 아이디값";
 		// ec2 배포
-		// String redirectURI = URLEncoder.encode("http://3.37.117.137:8080/login/naverLogin", "UTF-8"); ///login/naverLogin으로 이동
-		String redirectURI = URLEncoder.encode("http://localhost:8080/login/naverLogin", "UTF-8"); ///login/naverLogin으로 이동
+		String redirectURI = URLEncoder.encode("http://3.35.94.210:8080/login/naverLogin", "UTF-8"); ///login/naverLogin으로 이동
+		//String redirectURI = URLEncoder.encode("http://localhost:8080/login/naverLogin", "UTF-8"); ///login/naverLogin으로 이동
 		SecureRandom random = new SecureRandom();
 		String state = new BigInteger(130, random).toString();
 		String apiURL = "https://nid.naver.com/oauth2.0/authorize?response_type=code";

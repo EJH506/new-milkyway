@@ -14,8 +14,8 @@
   String code = request.getParameter("code");
   String state = request.getParameter("state");
   // ec2 배포
-  // String redirectURI = URLEncoder.encode("http://3.37.117.137:8080/procs/loginProc", "UTF-8");
-  String redirectURI = URLEncoder.encode("http://localhost:8080/procs/loginProc", "UTF-8");
+  String redirectURI = URLEncoder.encode("http://3.35.94.210:8080/procs/loginProc", "UTF-8");
+  // String redirectURI = URLEncoder.encode("http://localhost:8080/procs/loginProc", "UTF-8");
   String apiURL;
   apiURL = "https://nid.naver.com/oauth2.0/token?grant_type=authorization_code&";
   apiURL += "client_id=" + clientId;

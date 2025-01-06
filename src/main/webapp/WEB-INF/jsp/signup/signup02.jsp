@@ -292,8 +292,8 @@
  	//부모 창에서 메시지 수신
 	window.addEventListener('message', (event) => {
 		// ec2 배포
-	    // if (event.origin === 'http://3.37.117.137:8080') {
-	    if (event.origin === 'http://localhost:8080') {
+	    if (event.origin === 'http://3.35.94.210:8080') {
+	    // if (event.origin === 'http://localhost:8080') {
 	       const receivedData = event.data;
 	   
 	       //아이디 중복체크 결과가 사용가능일 경우
